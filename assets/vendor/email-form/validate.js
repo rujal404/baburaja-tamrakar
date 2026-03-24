@@ -15,6 +15,7 @@ form.addEventListener("submit", function(e) {
 
   fetch("https://formspree.io/f/xeerwbkq", {
     method: "POST",
+    encrypt: "multipart/form-data",
     body: formData,
     headers: {
       "Accept": "application/json"
